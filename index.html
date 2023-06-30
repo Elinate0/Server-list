@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Server List</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css"
       rel="stylesheet"
@@ -74,7 +74,11 @@
             class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
           >
             <a href="#" target="_blank">
-              <img class="rounded-lg" src="./assets/img/image.png" alt="blazinglayer" />
+              <img
+                class="rounded-lg"
+                src="./assets/img/image.png"
+                alt="blazinglayer"
+              />
             </a>
           </figure>
         </div>
@@ -90,6 +94,31 @@
         battlematrics.
       </div>
     </div>
+
+    <div class="flex justify-center sm:ml-64 space-x-4">
+      <div class="w-80 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <svg class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z" clip-rule="evenodd"></path><path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path></svg>
+        <a href="#">
+          <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white" id="totalPlayersDOM"></h5>
+          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Number of players on all listed servers</p>
+        </a>
+      </div>
+      <div class="w-80 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <svg class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z" clip-rule="evenodd"></path><path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path></svg>
+        <a href="#">
+          <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white" id="totalServersDOM"></h5>
+          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Number of all servers listed</p>
+        </a>
+      </div>
+      <div class="w-80 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <svg class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z" clip-rule="evenodd"></path><path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path></svg>
+        <a href="#">
+          <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white" id="count">List Tracking: </h5>
+          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Time required for Tracking to refresh</p>
+        </a>
+      </div>
+    </div>
+
     <div class="p-4 sm:ml-64">
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
         <table
@@ -136,26 +165,36 @@
     </div>
 
     <div class="p-4 sm:ml-64">
-    <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
-        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://github.com/Elinate0" class="hover:underline">Elinate</a>. All Rights Reserved.
-        </span>
-        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+      <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+        <div
+          class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
+        >
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+            >© 2023
+            <a href="https://github.com/Elinate0" class="hover:underline"
+              >Elinate</a
+            >. All Rights Reserved.
+          </span>
+          <ul
+            class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
+          >
             <li>
-                <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+              <a href="#" class="mr-4 hover:underline md:mr-6">About</a>
             </li>
             <li>
-                <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+              <a href="#" class="mr-4 hover:underline md:mr-6"
+                >Privacy Policy</a
+              >
             </li>
             <li>
-                <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+              <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
             </li>
             <li>
-                <a href="#" class="hover:underline">Contact</a>
+              <a href="#" class="hover:underline">Contact</a>
             </li>
-        </ul>
+          </ul>
         </div>
-    </footer>   
+      </footer>
     </div>
     <script src="./assets/js/script.js"></script>
   </body>
